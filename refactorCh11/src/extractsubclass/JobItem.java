@@ -14,6 +14,7 @@ public class JobItem {
 	 * 9. 在JobItem與LaborItem類別中新建isLabor(),父類別回傳false,子類別回傳true,即可刪除_isLabor欄位
 	 * 10. 將getUnitPrice修正,JobItem與LaborItem類別中回傳_unitPrice與_employee.getRate()
 	 * 11. 對JobItem提煉出subclass partItem,將JobItem宣告為抽象類別
+	 * 
 	 */
 
 	private int _unitPrice;
