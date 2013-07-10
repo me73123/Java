@@ -16,22 +16,9 @@ public class RegularCustomer extends Customer {
 		addBill(date, charge);
 	}
 	
-	private double chargeFor(Date start, Date end){
+	protected double chargeFor(Date start, Date end){
 		double daterange = start.getTime() - end.getTime() * 50;
 		return daterange;
 	}
 	
-	
-	
-	
-//	private double preferential =;
-//	
-//	private double getBilling(){
-//		price -= 100 * discounts();
-//		return price;
-//	}
-//	
-//	private double discounts(){
-//		return ;
-//	}
 }

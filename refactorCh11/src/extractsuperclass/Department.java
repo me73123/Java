@@ -12,7 +12,6 @@ public class Department{
 	 * 5. 將getAnnualCost()與 getTotalAnnualCost()變更相同名稱
 	 * 6. 在Party中建立getAnnualCost()的抽象函式
 	 * 7. 將Department的getAnnualCost()中Employee改為取Party
-	 * 
 	 */
 
 	private String _name;

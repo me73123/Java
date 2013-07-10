@@ -6,8 +6,17 @@ public class Employee {
 	 * 2. 刪除多餘的class
 	 * 
 	 */
+	private String id;
 	private int rate;
 	private boolean hasSpecialSkill;
+	
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
 	
 	public int getRate(){
 		return rate * 5;
@@ -16,4 +25,5 @@ public class Employee {
 	public boolean hasSpecialSkill(){
 		return hasSpecialSkill;
 	}
+	
 }

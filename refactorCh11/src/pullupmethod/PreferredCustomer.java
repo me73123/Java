@@ -17,7 +17,7 @@ public class PreferredCustomer extends Customer {
 		addBill(date, charge);
 	}
 	
-	private double chargeFor(Date start, Date end){
+	protected double chargeFor(Date start, Date end){
 		double daterange = start.getTime() - end.getTime() * 100;
 		return daterange;
 	}

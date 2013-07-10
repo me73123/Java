@@ -2,8 +2,9 @@ package replaceinheritancewithdelegation;
 
 import java.util.Random;
 
-public class Dice extends Random {
-	
+public class Dice extends Random{
+	//Random http://docs.oracle.com/javase/6/docs/api/java/util/Random.html
+
 	/*
 	 * 1. 在Dice中宣告父類別型態的委託用欄位_random
 	 * 2. 在建構子中用this初始化_random
@@ -12,27 +13,28 @@ public class Dice extends Random {
 	 * 5. 利用父類別的instance將委託用欄位做初始化
 	 * 6. 在Dice中宣告setSeed(),透過_random呼叫Random的setSeed()
 	 * 7. 將多餘的程式碼移除(拒絕承續的部分)
-	 * 8. 將建構子做連鎖
+	 * 8. 將建構子做連鎖this(314159L)
 	 * 
 	 */
+
 	public Dice(){
 		super(314159L);
 	}
 	
-	public Dice(Long seed){
+	public Dice(long seed){
 		super(seed);
 	}
 	
 	@Override
 	public int nextInt(){
-		return next(6) + 1;
+		return nextInt(6) + 1;
 	}
 	
 	//=======================拒絕承續=======================//
 	
 	@Override
 	public void nextBytes(byte[] bytes){
-		throw new UnsupportedOperationException();
+		throw new UnsupportedOperationException();  //不可控例外中的不支援這個操作
 	}
 	
 	@Override

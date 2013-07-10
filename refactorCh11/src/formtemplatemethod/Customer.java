@@ -6,7 +6,7 @@ import java.util.Vector;
 class Customer {
 	
 	/*
-	 * 1. 新建一個父類別Statement與兩個subclass TextStatement HtmlStatement
+	 * 1. 新建兩個subclass TextStatement HtmlStatement
 	 * 2. 將statement(),htmlStatement()分別放入對應的subclass
 	 * 3. 將兩個函式rename成同一個名稱,在Customer新增一個getRentals(),取代elements()
 	 * 4. 將組合列印表頭字串(result)的部分寫成一個函式

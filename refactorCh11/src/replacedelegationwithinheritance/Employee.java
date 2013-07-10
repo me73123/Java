@@ -1,6 +1,6 @@
 package replacedelegationwithinheritance;
 
-public class Employee extends Person{
+public class Employee {
 	/*
 	 * 1. 將Employee繼承Person
 	 * 2. 去除_person
@@ -19,5 +19,9 @@ public class Employee extends Person{
 	
 	public String toString(){
 		return "Emp: " + _person.getLastName();
+	}
+	
+	private void printStr(String str){
+		System.out.println(str);
 	}
 }

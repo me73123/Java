@@ -5,9 +5,12 @@ public class Employee {
 	protected String _name;
 	protected String _id;
 	
+
 	protected void assignCar(){
 	}
-	private boolean isPriviliged(){
+	
+	protected boolean isPriviliged(){
 		return false;
 	}
+
 }

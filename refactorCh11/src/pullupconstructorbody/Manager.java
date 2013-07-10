@@ -9,12 +9,14 @@ public class Manager extends Employee {
 		_name = name;
 		_id = id;
 		_grade = grade;
+		
 		if(isPriviliged()){
 			assignCar();
 		}
 	}
 	
-	private boolean isPriviliged(){
+	@Override
+	protected boolean isPriviliged(){
 		return _grade > 4;
 	}
 }
